@@ -173,11 +173,11 @@ public class Scheduler {
     private Processo executarPrevencaoInanição() {
         if (!lista_media_prioridade.estaVazia()) {
             Processo processo = lista_media_prioridade.removerInicio();
-            System.out.println("⚡ Prevenção de Inanição: Executando " + processo.nome);
+            System.out.println(" Prevenção de Inanição: Executando " + processo.nome);
             return processo;
         } else if (!lista_baixa_prioridade.estaVazia()) {
             Processo processo = lista_baixa_prioridade.removerInicio();
-            System.out.println("⚡ Prevenção de Inanição: Executando " + processo.nome);
+            System.out.println(" Prevenção de Inanição: Executando " + processo.nome);
             return processo;
         }
         return null;
