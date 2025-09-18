@@ -1,6 +1,4 @@
-# Java 
-# Java
-## Como executar
+
 public class ListaDeProcessos {
     private NoProcesso inicio;
     private NoProcesso fim;
