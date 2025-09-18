@@ -76,24 +76,24 @@ public class ListaDeProcessos {
             }
             atual = atual.proximo;
             count++;
-
-            if (count >= 5 && atual != null) {
-                sb.append("... (+" + (tamanho - count) + ")");
-                break;
-            }
-        }
-
-        return sb.toString();
-    }
-
-    public boolean contemProcesso(int id) {
-        NoProcesso atual = inicio;
-        while (atual != null) {
-            if (atual.processo.id == id) {
-                return true;
-            }
-            atual = atual.proximo;
-        }
+ 
         return false;
+    }
+}
+public NoProcesso(Processo processo) {
+        this.processo = processo;
+        this.anterior = null;
+        this.proximo = null;
+    }
+} 
+
+                }
+            }
+
+            System.out.println("\n Todos os processos finalizados!");
+
+        } catch (IOException e) {
+            System.out.println(" Erro: " + e.getMessage());
+        }
     }
 }
